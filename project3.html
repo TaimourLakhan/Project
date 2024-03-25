@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(255,255,255, 0.7);
+        }
+        h1{
+            color: blueviolet;
+            text-align: center;
+            font-size: 2rem;
+        }
+        .container{
+            width: 50%;
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: space-evenly;
+            box-shadow: 10px 10px 15px rgb(36, 32, 32);
+            margin: 15px auto;
+            background-color: rgb(19, 17, 17);
+            color: white;
+            border-radius: 20%;
+        }
+        label{
+            padding-right: 5px;
+            font-size: 1rem;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        fieldset{
+            width: 65%;
+            height: 20%;
+            /* border-top: 16px solid black; */
+            border: 16px solid white;
+            box-shadow: 10px 10px 15px orange;
+            margin: 10px auto;
+            animation: top 2s linear infinite;
+            
+        }
+        @keyframes top {
+            0%{
+                border-top: 5px solid goldenrod;
+            }
+            50%{
+                border-top: 10px solid goldenrod;
+            }
+            100%{
+                border-top: 16px solid goldenrod;
+            }
+            
+        }
+        .one{
+            margin-top: 12px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        Hey Contact me !
+    </h1>
+   <div class="container">
+    <form action="no action">
+        <div class="one">
+            <label for="text1"> Enter your name:</label>
+            <input type="text" id="text1" name="text1" placeholder="Enter name">
+        </div>
+        <div class="one">
+            <label for="email1"> Enter your E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Enter email here">
+        </div>
+        <div class="one">
+            <label for="range1"> Raise of interrest:</label>
+            <input type="range" id="range1" name="range1">
+        </div>
+        <div class="one">
+            <label for="gender"> Male:</label>
+            <input type="radio" id="gender">
+            <label for="female1">Female:</label>
+            <input type="radio" id="female1">
+        </div>
+        <div class="one">
+            <label for="birth">Your DOB:</label>
+            <input type="date">
+        </div>
+        <div class="one">
+            <button>Submit</button>
+        </div>
+    </form>
+    
+   </div>
+    <fieldset>
+        <legend id="name">Your Thoughts</legend>
+        <textarea name="" id="name" cols="70" rows="6" placeholder="write here !"></textarea>
+    </fieldset>
+</body>
+</html>
